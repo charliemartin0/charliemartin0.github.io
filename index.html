@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script> 
+
+    <title>Charlie Martin</title>
+  </head>
+
+  
+  <body>
+    <div class="navbar">
+      <ul class="navlist">
+        <li class="nav-item"><a>About</a></li>
+        <li class="nav-item"><a>Experience</a></li>
+        <li class="nav-item"><a>Work</a></li>
+        <li class="nav-item"><a>Contact</a></li>
+      </ul>
+    </div>
+    <div class="down-arrow"></div>
+    <div class="welcomemessage">
+        <h1 class="lightest">Charlie Martin</h1>
+        <h2 style="position: relative;">Web Developer<span class="welcome-accent">@Loughborough University</span></h2>
+        
+    </div>
+
+    <div class="about">
+      <h1 class="heading lightest">About</h1>
+      <p class="about-text">
+        I am a 2nd year Computer Science student at Loughborough University.
+         I am currently studying for a BSc in Computer Science with a year in industry.
+          I am currently on placement at Loughborough University as a Web Developer.</p>
+
+  </body>
+  <script>
+window.onscroll = function(ev) {
+    if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight) {
+        document.getElementsByClassName("down-arrow")[0].classList.add("hidden");
+    }
+    else{
+        document.getElementsByClassName("down-arrow")[0].classList.remove("hidden");
+        
+
+    }
+};
+  </script>
+</html>
